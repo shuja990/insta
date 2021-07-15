@@ -1,0 +1,30 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "develop": "nodemon index.js",
+    "build": "cd instapage && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "heroku-postbuild": "cd instapage && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "insta-scraper": "^1.0.2",
+    "instagram-analytics": "^3.0.1",
+    "instagram-profile-data": "^1.0.1",
+    "instagram-scraper-api": "^0.1.1",
+    "instagram-screen-scrape": "^2.0.0",
+    "instagrammer": "^1.0.11",
+    "nodemon": "^2.0.12",
+    "user-instagram": "^2.1.9"
+  }
+}
